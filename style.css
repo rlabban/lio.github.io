@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of reset */
+
+/* slightly enhanced, universal clearfix hack */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*---------------------Structure---------------------*/
+
+html {
+	background-color: #422709;
+	background-image: url(../images/misc/texture.jpeg);
+	background-size: cover;
+	background-blend-mode: overlay;
+}
+ body{
+	 font-family: 'Merriweather', serif;
+	 font-size: 18px;
+	 line-height: 1.5;
+	 color: #80b0ff;
+ }
+
+ div#page-wrap {
+ 	width: 900px;
+ 	margin: 50px auto;
+ 	padding: 50px;
+ 	border: 1px solid #414141;
+ 	box-sizing: border-box;
+ }
+
+ section {
+ 	clear: both;
+ }
+
+.thumb {
+	margin-top: 20px;
+}
+/*---------------------Typography--------------------*/
+
+h1,h2,h3,h4,h5,h6, header p, nav {
+	font-family: 'Calibre', sans-serif;
+	font-weight: bold;
+}
+
+p1 {
+	font-size: 0.8em;
+}
+
+header p {
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: 1;
+}
+
+o.yellow {
+	color: #ebe834;
+}
+
+p.social a i {
+	color: white;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #cc2127;
+	text-align: center;
+	margin-right: 10px;
+	border-radius: 50%;
+	font-size: 1.75em
+}
+
+p.social a i:hover {
+	background-color: #9e1519;
+}
+
+a {
+	color: #bc9126;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #99821f;
+}
+
+p {
+	margin-bottom: 18px;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+h3 {
+	text-align: left;
+	font-size: 1.2em;
+}
+
+h3 span {
+	color: rgba(0,0,0.3);
+}
+
+h4 {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+header, nav, footer {
+	text-align: center;
+}
+
+nav a {
+	color: #d145cc;
+}
+
+figure.fave {
+	float:left;
+	width: 22%;
+	margin-right: 4%;
+	text-align: center;
+	/*outline: 1px solid red;*/
+}
+
+figure.fave figcaption span {
+	font-weight: bold;
+}
+
+img.fairey {
+	float: left;
+	margin-right: 30px;
+	width: 50%;
+}
+
+img.fairey {
+	float: left;
+	margin-right: 30px;
+	width: 50%;
+}
+
+figure.fave img {
+	width: 100%;
+	outline: 1px solid black;
+}
+
+figure.fave {
+	float:left;
+	width: 22%;
+	margin-right: 4%;
+	text-align: center;
+}
+
+figure.fave:last-child {
+	margin-right: 0;
+}
+
+li {
+	width: 25%;
+	float: left;
+
+}
+img.thumb1 {
+	width: 30%;
+	float: left;
+	margin-right: 30px;
+}
+img.thumb {
+	width: 30%;
+	float: left;
+	margin-right: 30px;
+}
+
+p.center {
+	text-align: center;
+}
+
+footer img {
+	width: 200px;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+footer {
+	margin-bottom: 50px;
+}
+
+/*----------------Media Queries-----------------*/
+
+@media only screen and (max-width: 768px) {
+	html {background-color: blue;}
+	div#page-wrap {
+		width: 80%;
+	}
+	img.thumb {
+		width: 100%;
+		float: none;
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+	img.fairey {
+		float: none;
+		margin-right: 0;
+		width: 100%;
+	}
+}
